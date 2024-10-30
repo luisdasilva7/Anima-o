@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(255, 222, 194);
+    background-image: url(https://images.template.net/377879/Cartoon-Road-Background-edit-online-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+ .carro1{
+    width: 180px;
+    position: absolute;
+    bottom: 5px;
+    animation: movimento1 7s ease;
+    
+    
+}
+ .carro2{
+    width: 180px;
+    position: absolute;
+    bottom: 100px;
+    animation: movimento2 7s ease;
+    right: 5px;
+    
+}
+
+.passaro{
+    animation: movimento3 15s ease;
+    width: 120px;
+    right: 5px;
+    position: absolute;
+    top: 100px;
+
+}
+
+@keyframes movimento1 {
+    from{
+        transform: translate(0,0);
+    }
+
+    to{
+        transform: translate(calc(100vw - 180px), 0px);
+    }
+}
+@keyframes movimento2 {
+    from{
+        transform: translate(0,0);
+    }
+
+    to{
+        transform: translate(calc(-100vw - -180px), 0px) ;
+    
+
+        
+    }
+}
+
+@keyframes movimento3 {
+    from{
+        transform: translate(0,0);
+    }
+
+    to{
+        transform: translate(calc(-100vw - -120px), 0px);
+    }
+}
